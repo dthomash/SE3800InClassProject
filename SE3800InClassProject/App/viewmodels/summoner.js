@@ -4,6 +4,7 @@
         this.description = 'Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain.';
         this.summonerName = "";
         this.summonerLevel = "";
+        this.revisionDate = "";
 
         var that = this;
 
@@ -12,6 +13,7 @@
             return http.get("api/summoner", summonerName).then(function (response) {
                 that.summonerName = response.SummonerName;
                 that.summonerIconId = response.SummonerIconId;
+                that.revisionDate = response.RevisionDate + "";
             },function(response) {
                 alert("Search failed");
             });
