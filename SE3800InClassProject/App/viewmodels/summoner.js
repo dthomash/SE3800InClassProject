@@ -12,6 +12,7 @@
             return http.get("api/summoner", summonerName).then(function (response) {
                 that.summonerName = response.SummonerName;
                 that.summonerIconId = response.SummonerIconId;
+                that.summonerLevel = response.summonerLevel;
             },function(response) {
                 alert("Search failed");
             });
