@@ -17,3 +17,15 @@ D:\MyDocs\League\LolBackdoor\lolBackdoor\bin\Debug\EntityFramework.dll
 D:\MyDocs\League\LolBackdoor\lolBackdoor\bin\Debug\EntityFramework.SqlServer.dll
 D:\MyDocs\League\LolBackdoor\lolBackdoor\bin\Debug\EntityFramework.xml
 D:\MyDocs\League\LolBackdoor\lolBackdoor\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\LolBackdoor.dll.config
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\LolBackdoor.dll
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\LolBackdoor.pdb
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\EntityFramework.dll
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\Newtonsoft.Json.dll
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\EntityFramework.xml
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\bin\Debug\Newtonsoft.Json.xml
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\obj\Debug\LolBackdoor.csprojResolveAssemblyReference.cache
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\obj\Debug\LolBackdoor.dll
+D:\MyDocs\School\SE3800\InClassGit\SE3800InClassProject\lolBackdoor\obj\Debug\LolBackdoor.pdb

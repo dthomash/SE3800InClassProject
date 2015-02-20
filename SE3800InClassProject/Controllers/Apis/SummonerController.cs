@@ -11,18 +11,31 @@ using LolBackdoor.Data.SummonerData;
 using SmurfTracker.ApiControllers;
 using LolBackdoor = LolBackdoor.LolBackdoor;
 
-namespace SmurfTracker.Controllers.Apis
+namespace SE3800InClassProject.Controllers.Apis
 {
     [RoutePrefix("api/summoner")]
     public class SummonerController : ApiController
     {
-        public static readonly global::LolBackdoor.LolBackdoor lol = new global::LolBackdoor.LolBackdoor("../../../SmurfTracker/LolBackdoorConfig.xml");
-        private ISummonerApiController summonerApiController = new SummonerApiController();
+        public static global::LolBackdoor.LolBackdoor Lol;
+        private readonly ISummonerApiController _summonerApiController;
+
+        public SummonerController()
+        {
+            try
+            {
+                Lol = new global::LolBackdoor.LolBackdoor("../../../SmurfTracker/LolBackdoorConfig.xml");
+            }
+            catch (Exception e)
+            {
+                Lol = new global::LolBackdoor.LolBackdoor("LolBackdoorConfig.xml");
+            }
+            _summonerApiController = new SummonerApiController();
+        }
 
         [ResponseType(typeof(LolSummoner))]
         public IHttpActionResult GetSummonerByName(string summonerName)
         {
-            return Ok(summonerApiController.GetSummonerBySummonerName(summonerName)[summonerName]);
+            return Ok(_summonerApiController.GetSummonerBySummonerName(summonerName)[summonerName]);
         }
     }
 }

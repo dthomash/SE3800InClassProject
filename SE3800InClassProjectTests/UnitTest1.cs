@@ -1,7 +1,7 @@
 ﻿using System.Web.Http.Results;
 using LolBackdoor.Data.SummonerData;
-using SmurfTracker.Controllers.Apis;
 using NUnit.Framework;
+using SE3800InClassProject.Controllers.Apis;
 
 namespace SE3800InClassProjectTests
 {

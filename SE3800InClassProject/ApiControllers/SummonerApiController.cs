@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using LolBackdoor.Config;
 using LolBackdoor.Data.SummonerData;
-using SmurfTracker.Controllers.Apis;
+using SE3800InClassProject.Controllers.Apis;
 using SmurfTracker.Models;
 
 namespace SmurfTracker.ApiControllers
@@ -21,7 +21,7 @@ namespace SmurfTracker.ApiControllers
                     summonerNamesArray.Select(
                         name =>
                             db.Summoners.FirstOrDefault(summoner => summoner.SummonerName == name)
-                                ?? db.Summoners.Add(SummonerController.lol[LolRegion.NA].SummonerApi.GetSummonersBySummonerNames(new string[]{name}).First().Value))
+                                ?? db.Summoners.Add(SummonerController.Lol[LolRegion.NA].SummonerApi.GetSummonersBySummonerNames(new string[]{name}).First().Value))
                                 .ToDictionary(summoner => summoner.SummonerName, summoner => summoner);
             }
 
