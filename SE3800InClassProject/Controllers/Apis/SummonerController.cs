@@ -23,7 +23,7 @@ namespace SE3800InClassProject.Controllers.Apis
         {
             try
             {
-                Lol = new global::LolBackdoor.LolBackdoor("../../../SmurfTracker/LolBackdoorConfig.xml");
+                Lol = new global::LolBackdoor.LolBackdoor("../../../SE3800InClassProject/LolBackdoorConfig.xml");
             }
             catch (Exception e)
             {
