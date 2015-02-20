@@ -14,6 +14,7 @@
                 that.summonerName = response.SummonerName;
                 that.summonerIconId = response.SummonerIconId;
                 that.revisionDate = response.RevisionDate + "";
+                that.summonerLevel = response.SummonerLevel;
             },function(response) {
                 alert("Search failed");
             });
