@@ -15,7 +15,7 @@ namespace SmurfTracker.ApiControllers
         {
             Dictionary<string, LolSummoner> summoners;
             var summonerNamesArray = summonerNames.Split(',');
-            using (var db = new SmurfTrackerContext())
+            using (var db = new SE3800InClassContext())
             {
                 summoners =
                     summonerNamesArray.Select(

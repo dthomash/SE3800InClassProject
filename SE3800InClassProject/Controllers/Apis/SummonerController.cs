@@ -27,7 +27,7 @@ namespace SE3800InClassProject.Controllers.Apis
             }
             catch (Exception e)
             {
-                Lol = new global::LolBackdoor.LolBackdoor("LolBackdoorConfig.xml");
+                Lol = new global::LolBackdoor.LolBackdoor("D:/MyDocs/School/SE3800/InClassGit/SE3800InClassProject/SE3800InClassProject/LolBackdoorConfig.xml");
             }
             _summonerApiController = new SummonerApiController();
         }

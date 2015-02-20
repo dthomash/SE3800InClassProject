@@ -10,20 +10,13 @@
         this.activate = function (params) {
             var summonerName = { summonerName : params.summonerName };
             return http.get("api/summoner", summonerName).then(function (response) {
-                var summoner = response[params.summonerName];
-                that.summonerName = summoner.SummonerName;
-                that.summonerIconId = summoner.SummonerIconId;
-                that.summonerLevel = summoner.SummonerLevel;
+                that.summonerName = response.SummonerName;
+                that.summonerIconId = response.SummonerIconId;
             },function(response) {
                 alert("Search failed");
             });
         };
     };
-
-    //Note: This module exports a function. That means that you, the developer, can create multiple instances.
-    //This pattern is also recognized by Durandal so that it can create instances on demand.
-    //If you wish to create a singleton, you should export an object instead of a function.
-    //See the "flickr" module for an example of object export.
 
     return ctor;
 });
